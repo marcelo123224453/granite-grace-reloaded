@@ -7,10 +7,8 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +35,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -77,20 +72,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "NAGROBEX — Zakład Kamieniarski Poznań | Nagrobki granitowe, renowacja" },
+      { name: "description", content: "NAGROBEX — nagrobki granitowe, renowacja, indywidualne projekty. Poznań i Wielkopolska. Pan Kamil doradzi osobiście. Bezpłatna wycena: 515 486 550." },
+      { name: "theme-color", content: "#1A1A1A" },
+      { property: "og:title", content: "NAGROBEX — Zakład Kamieniarski Poznań | Nagrobki granitowe, renowacja" },
+      { property: "og:description", content: "NAGROBEX — nagrobki granitowe, renowacja, indywidualne projekty. Poznań i Wielkopolska. Pan Kamil doradzi osobiście. Bezpłatna wycena: 515 486 550." },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "pl_PL" },
+      { name: "twitter:title", content: "NAGROBEX — Zakład Kamieniarski Poznań | Nagrobki granitowe, renowacja" },
+      { name: "twitter:description", content: "NAGROBEX — nagrobki granitowe, renowacja, indywidualne projekty. Poznań i Wielkopolska. Pan Kamil doradzi osobiście. Bezpłatna wycena: 515 486 550." },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -99,7 +96,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-function RootShell({ children }: { children: ReactNode }) {
+function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -118,7 +115,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
   );
