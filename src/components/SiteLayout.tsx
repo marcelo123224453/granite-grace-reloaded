@@ -114,7 +114,7 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 size-4 shrink-0 text-gold" /><span>Obornicka 306<br/>60-691 Poznań</span></li>
             <li><a href="tel:515486550" className="flex items-center gap-2 hover:text-gold"><Phone className="size-4 text-gold" />515 486 550</a></li>
-            <li className="flex items-start gap-2"><Clock className="mt-0.5 size-4 shrink-0 text-gold" /><span>Pon–Pt 10:00–18:00</span></li>
+            <li className="flex items-start gap-2"><Clock className="mt-0.5 size-4 shrink-0 text-gold" /><span>Pon–Pt 10:00–18:00<br/>Sob–Nd: Dostosujemy się do klienta po wcześniejszym umówieniu</span></li>
             <li><a href="https://www.facebook.com/p/Nagrobex-100076462323777/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-gold"><Facebook className="size-4 text-gold" />Facebook</a></li>
           </ul>
         </div>
