@@ -91,7 +91,7 @@ export const Route = createFileRoute("/api/send-email")({
           },
           body: JSON.stringify({
             from: "NAGROBEX <kontakt@nagrobex-poznan.pl>",
-            to: ["nagrobex-kontakt@wp.pl"],
+            to: ["nagrobex.kontakt@gmail.com"],
             reply_to: email || undefined,
             subject: `Nowe zapytanie od ${name} — ${inquiry}`,
             html: htmlBody,
