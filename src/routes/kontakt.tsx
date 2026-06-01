@@ -150,7 +150,7 @@ function KontaktPage() {
               Obornicka 306<br />60-691 Poznań
             </InfoCard>
             <InfoCard icon={Clock} title="Godziny otwarcia">
-              Pon–Pt 10:00–18:00<br />Sob–Nd: zamknięte
+              Pon–Pt 10:00–18:00<br />Sob–Nd: Dostosujemy się do klienta po wcześniejszym umówieniu
             </InfoCard>
             <InfoCard icon={Facebook} title="Social">
               <a href="https://www.facebook.com/p/Nagrobex-100076462323777/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
