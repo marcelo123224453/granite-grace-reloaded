@@ -23,7 +23,7 @@ import nDetal    from "@/assets/nagrobek-detal.jpg";
 import nWarsztat from "@/assets/nagrobek-warsztat.jpg";
 
 // ── Nowe zdjęcia IMG_6xxx ──
-import n1  from "@/assets/IMG_6006.HEIC";
+import n1  from "@/assets/IMG_6006.JPG";
 import n2  from "@/assets/IMG_6008.HEIC";
 import n3  from "@/assets/IMG_6009.HEIC";
 import n4  from "@/assets/IMG_6015.HEIC";
