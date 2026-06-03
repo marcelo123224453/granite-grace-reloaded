@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/galeria.tsx << 'ENDOFFILE'
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo } from "react";
@@ -86,92 +85,73 @@ export const Route = createFileRoute("/galeria")({
 
 type Cat = "pojedyncze" | "podwojne" | "Naprawy/Renowacja" | "dzieciece" | "Grobowiec" | "liternictwo/galatria/grawery";
 
-// Klucz kategorii: 1=pojedyncze 2=podwojne 3=Naprawy/Renowacja 4=dzieciece 5=Grobowiec 6=liternictwo/galatria/grawery
-const CAT: Record<number, Cat> = {
-  1: "pojedyncze",
-  2: "podwojne",
-  3: "Naprawy/Renowacja",
-  4: "dzieciece",
-  5: "Grobowiec",
-  6: "liternictwo/galatria/grawery",
-};
-
-const LABEL: Record<Cat, string> = {
-  pojedyncze: "Nagrobek pojedynczy",
-  podwojne: "Nagrobek podwójny",
-  "Naprawy/Renowacja": "Naprawa / Renowacja",
-  dzieciece: "Nagrobek dziecięcy",
-  Grobowiec: "Grobowiec",
-  "liternictwo/galatria/grawery": "Liternictwo / Galanteria / Grawery",
-};
-
-const items: { img: string; cat: Cat; desc: string }[] = [
-  { img: nOld1,    cat: CAT[5], desc: "nr 1"  },  // 5 = Grobowiec
-  { img: nOld10,   cat: CAT[3], desc: "nr 2"  },  // 3 = Naprawy/Renowacja
-  { img: nOld6,    cat: CAT[1], desc: "nr 3"  },  // 1 = pojedyncze
-  { img: nOld7,    cat: CAT[3], desc: "nr 4"  },  // 3
-  { img: nOld8,    cat: CAT[2], desc: "nr 5"  },  // 2 = podwojne
-  { img: nOld9,    cat: CAT[1], desc: "nr 6"  },  // 1
-  { img: nOld2,    cat: CAT[2], desc: "nr 7"  },  // 2
-  { img: nOld3,    cat: CAT[1], desc: "nr 8"  },  // 1
-  { img: nOld4,    cat: CAT[5], desc: "nr 9"  },  // 5
-  { img: nOld5,    cat: CAT[1], desc: "nr 10" },  // 1
-  { img: nOld11,   cat: CAT[5], desc: "nr 11" },  // 5
-  { img: nOld12,   cat: CAT[1], desc: "nr 12" },  // 1
-  { img: n43,      cat: CAT[5], desc: "nr 13" },  // 5
-  { img: nDetal,   cat: CAT[6], desc: "nr 14" },  // 6
-  { img: nWarsztat,cat: CAT[1], desc: "nr 15" },  // 1
-  { img: n1,       cat: CAT[2], desc: "nr 16" },  // 2
-  { img: n2,       cat: CAT[1], desc: "nr 17" },  // 1
-  { img: n3,       cat: CAT[1], desc: "nr 18" },  // 1
-  { img: n4,       cat: CAT[1], desc: "nr 19" },  // 1
-  { img: n5,       cat: CAT[1], desc: "nr 20" },  // 1
-  { img: n6,       cat: CAT[1], desc: "nr 21" },  // 1
-  { img: n7,       cat: CAT[1], desc: "nr 22" },  // 1
-  { img: n8,       cat: CAT[2], desc: "nr 23" },  // 2
-  { img: n9,       cat: CAT[1], desc: "nr 24" },  // 1
-  { img: n10,      cat: CAT[1], desc: "nr 25" },  // 1
-  { img: n11,      cat: CAT[1], desc: "nr 26" },  // 1
-  { img: n12,      cat: CAT[1], desc: "nr 27" },  // 1
-  { img: n13,      cat: CAT[2], desc: "nr 28" },  // 2
-  { img: n14,      cat: CAT[2], desc: "nr 29" },  // 2
-  { img: n15,      cat: CAT[2], desc: "nr 30" },  // 2
-  { img: n16,      cat: CAT[2], desc: "nr 31" },  // 2
-  { img: n17,      cat: CAT[1], desc: "nr 32" },  // 1
-  { img: n18,      cat: CAT[1], desc: "nr 33" },  // 1
-  { img: n19,      cat: CAT[5], desc: "nr 34" },  // 5
-  { img: n20,      cat: CAT[1], desc: "nr 35" },  // 1
-  { img: n21,      cat: CAT[1], desc: "nr 36" },  // 1
-  { img: n22,      cat: CAT[1], desc: "nr 37" },  // 1
-  { img: n23,      cat: CAT[1], desc: "nr 38" },  // 1
-  { img: n24,      cat: CAT[1], desc: "nr 39" },  // 1
-  { img: n25,      cat: CAT[1], desc: "nr 40" },  // 1
-  { img: n26,      cat: CAT[1], desc: "nr 41" },  // 1
-  { img: n27,      cat: CAT[1], desc: "nr 42" },  // 1
-  { img: n28,      cat: CAT[1], desc: "nr 43" },  // 1
-  { img: n29,      cat: CAT[1], desc: "nr 44" },  // 1
-  { img: n30,      cat: CAT[1], desc: "nr 45" },  // 1
-  { img: n31,      cat: CAT[5], desc: "nr 46" },  // 5
-  { img: n32,      cat: CAT[1], desc: "nr 47" },  // 1
-  { img: n33,      cat: CAT[1], desc: "nr 48" },  // 1
-  { img: n34,      cat: CAT[1], desc: "nr 49" },  // 1
-  { img: n35,      cat: CAT[1], desc: "nr 50" },  // 1
-  { img: n36,      cat: CAT[2], desc: "nr 51" },  // 2
-  { img: n37,      cat: CAT[1], desc: "nr 52" },  // 1
-  { img: n38,      cat: CAT[5], desc: "nr 53" },  // 5
-  { img: n39,      cat: CAT[1], desc: "nr 54" },  // 1
-  { img: n40,      cat: CAT[1], desc: "nr 55" },  // 1
-  { img: n41,      cat: CAT[1], desc: "nr 56" },  // 1
+const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
+  { img: nOld1,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 1" },
+  { img: nOld10, type: "Naprawy/Renowacja",        cats: ["Naprawy/Renowacja"],                                    desc: "nr, 2" },
+  { img: nOld6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                           desc: "nr, 3" },
+  { img: nOld7,  type: "Naprawy/Renowacja",       cats: ["Naprawy/Renowacja"],                                   desc: "nr, 4" },
+  { img: nOld8,  type: "Nagrobek podwójny",        cats: ["podwojne"],                           desc: "nr, 5" },
+  { img: nOld9,  type: "Naprawa/Renowacja",        cats: ["Naprawy/Renowacja"],                           desc: "nr, 6" },
+  { img: nOld2,  type: "Nagrobek podwójny",        cats: ["podwojne"],                                    desc: "nr, 7" },
+  { img: nOld3,  type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 8" },
+  { img: nOld4,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 9" },
+  { img: nOld5,  type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 10" },
+  { img: nOld11, type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 11" },
+  { img: nOld12, type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 12" },
+  { img: n43,    type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 13" },
+  { img: nDetal, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 14" },
+  { img: nWarsztat, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],                                   desc: "nr, 15" },
+  { img: n1,  type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 16" },
+  { img: n2,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 17" },
+  { img: n3,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 18" },
+  { img: n4,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 19" },
+  { img: n5,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 20" },
+  { img: n6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 21" },
+  { img: n7,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 22" },
+  { img: n8,  type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 23" },
+  { img: n9,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 24" },
+  { img: n10, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 25" },
+  { img: n11, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 26" },
+  { img: n12, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 27" },
+  { img: n13, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 28" },
+  { img: n14, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 29" },
+  { img: n15, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 30" },
+  { img: n16, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 31" },
+  { img: n17, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 32" },
+  { img: n18, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 33" },
+  { img: n19, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 34" },
+  { img: n20, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 35" },
+  { img: n21, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 36" },
+  { img: n22, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 37" },
+  { img: n23, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 38" },
+  { img: n24, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 39" },
+  { img: n25, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 40" },
+  { img: n26, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 41" },
+  { img: n27, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 42" },
+  { img: n28, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 43" },
+  { img: n29, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 44" },
+  { img: n30, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 45" },
+  { img: n31, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 46" },
+  { img: n32, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
+  { img: n33, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 48" },
+  { img: n34, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 49" },
+  { img: n35, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 50" },
+  { img: n36, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 51" },
+  { img: n37, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 52" },
+  { img: n38, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 53" },
+  { img: n39, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 54" },
+  { img: n40, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 55" },
+  { img: n41, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 56" },
 ];
 
 const FILTERS: { key: "wszystkie" | Cat; label: string }[] = [
-  { key: "wszystkie",                    label: "Wszystkie" },
-  { key: "pojedyncze",                   label: "Pojedyncze" },
-  { key: "podwojne",                     label: "Podwójne" },
-  { key: "Naprawy/Renowacja",            label: "Naprawy / Renowacja" },
-  { key: "dzieciece",                    label: "Dziecięce" },
-  { key: "Grobowiec",                    label: "Grobowiec" },
-  { key: "liternictwo/galatria/grawery", label: "Liternictwo / Galanteria / Grawery" },
+  { key: "wszystkie", label: "Wszystkie" },
+  { key: "pojedyncze", label: "Pojedyncze" },
+  { key: "podwojne", label: "Podwójne" },
+  { key: "Naprawy/Renowacja", label: "Naprawy/Renowacja" },
+  { key: "dzieciece", label: "Dziecięce" },
+  { key: "liternictwo/galatria/grawery", label: "liternictwo/galatria/grawery" },
+  { key: "Grobowiec", label: "Grobowiec" },
 ];
 
 function GaleriaPage() {
@@ -179,7 +159,7 @@ function GaleriaPage() {
   const [active, setActive] = useState<typeof FILTERS[number]["key"]>(search.kategoria ?? "wszystkie");
 
   const filtered = useMemo(
-    () => active === "wszystkie" ? items : items.filter((it) => it.cat === active),
+    () => active === "wszystkie" ? items : items.filter((it) => it.cats.includes(active as Cat)),
     [active]
   );
 
@@ -213,7 +193,7 @@ function GaleriaPage() {
             <AnimatePresence mode="popLayout">
               {filtered.map((it, i) => (
                 <motion.figure
-                  key={it.img + it.cat + i}
+                  key={it.img + it.type + i}
                   layout
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -222,10 +202,10 @@ function GaleriaPage() {
                   className="group overflow-hidden border border-border bg-card transition-all hover:border-gold hover:shadow-xl"
                 >
                   <div className="aspect-[4/5] overflow-hidden bg-granite">
-                    <img src={it.img} alt={LABEL[it.cat]} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={it.img} alt={it.type} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                   <figcaption className="border-t border-border p-5">
-                    <h3 className="font-display text-lg text-granite">{LABEL[it.cat]}</h3>
+                    <h3 className="font-display text-lg text-granite">{it.type}</h3>
                     <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">{it.desc}</p>
                   </figcaption>
                 </motion.figure>
@@ -251,5 +231,3 @@ function GaleriaPage() {
     </PageWrap>
   );
 }
-ENDOFFILE
-echo "done"
