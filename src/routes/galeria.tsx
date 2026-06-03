@@ -98,7 +98,6 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: nOld5,  type: "Nagrobek prawosławny",       cats: ["pojedyncze", "nowoczesne"],            desc: "nr, 10" },
   { img: nOld11, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                          desc: "nr, 11" },
   { img: nOld12, type: "Nagrobek podwójny",          cats: ["podwojne"],                            desc: "nr, 12" },
-  { img: nOld13, type: "Nagrobek rodzinny",          cats: ["rodzinne"],                            desc: "nr, 13" },
   { img: nDetal,    type: "Detal — grafika nagrobka",cats: ["nowoczesne"],                          desc: "nr, 14" },
   { img: nWarsztat, type: "Wybór z naszego zakładu", cats: ["pojedyncze", "podwojne", "nowoczesne"],desc: "nr, 15" },
   { img: n1,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "nr, 16" },
