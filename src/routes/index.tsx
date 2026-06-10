@@ -233,9 +233,9 @@ function HomePage() {
                 key={t.label}
                 to="/galeria"
                 search={{ kategoria: t.filter }}
-                className="group flex aspect-square flex-col items-center justify-center border border-white/15 bg-white/[0.02] p-4 text-center transition-all hover:border-gold hover:bg-gold/10"
+                className="group flex aspect-square flex-col items-center justify-center border border-white/15 bg-white/[0.02] p-3 text-center transition-all hover:border-gold hover:bg-gold/10"
               >
-                <span className="font-display text-lg text-white group-hover:text-gold md:text-xl">{t.label}</span>
+                <span className="font-display text-sm leading-tight text-white group-hover:text-gold md:text-base lg:text-lg break-words hyphens-auto">{t.label}</span>
                 <span className="mt-2 h-px w-6 bg-gold/40 transition-all group-hover:w-12 group-hover:bg-gold" />
               </Link>
             ))}
