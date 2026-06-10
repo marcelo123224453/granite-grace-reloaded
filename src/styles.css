@@ -134,13 +134,15 @@
   }
 
   .shimmer {
-    background: linear-gradient(90deg,
+    display: inline-block;
+    background-image: linear-gradient(90deg,
       var(--color-gold) 0%,
       oklch(0.88 0.1 88) 50%,
       var(--color-gold) 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
     animation: shimmer 4s ease-in-out infinite;
   }
