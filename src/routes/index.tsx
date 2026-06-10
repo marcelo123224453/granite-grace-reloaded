@@ -69,12 +69,12 @@ const services = [
 ];
 
 const monumentTypes = [
-  { label: "Pojedynczy", filter: "pojedyncze" },
-  { label: "Podwójny", filter: "podwojne" },
-  { label: "Na urnę", filter: "urnowe" },
-  { label: "Dziecięcy", filter: "dzieciece" },
-  { label: "Rodzinny", filter: "rodzinne" },
-  { label: "Nowoczesny", filter: "nowoczesne" },
+  { label: "Pojedyncze", filter: "pojedyncze" as const },
+  { label: "Podwójne", filter: "podwojne" as const },
+  { label: "Naprawy/Renowacja", filter: "Naprawy/Renowacja" as const },
+  { label: "Dziecięce", filter: "dzieciece" as const },
+  { label: "liternictwo/galatria/grawery", filter: "liternictwo/galatria/grawery" as const },
+  { label: "Grobowiec", filter: "Grobowiec" as const },
 ];
 
 const materials = [
