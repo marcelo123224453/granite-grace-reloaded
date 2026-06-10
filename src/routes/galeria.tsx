@@ -202,7 +202,7 @@ function GaleriaPage() {
                   className="group overflow-hidden border border-border bg-card transition-all hover:border-gold hover:shadow-xl"
                 >
                   <div className="aspect-[4/5] overflow-hidden bg-granite">
-                    <img src={it.img} alt={it.type} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={it.img} alt={`${it.type} — realizacja NAGROBEX Poznań, nagrobki granitowe`} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   </div>
                   <figcaption className="border-t border-border p-5">
                     <h3 className="font-display text-lg text-granite">{it.type}</h3>
