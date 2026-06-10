@@ -150,7 +150,7 @@ export function PageWrap({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SectionTitle({ eyebrow, title, center = false }: { eyebrow?: string; title: string; center?: boolean }) {
+export function SectionTitle({ eyebrow, title, center = false, invert = false }: { eyebrow?: string; title: string; center?: boolean; invert?: boolean }) {
   return (
     <div className={center ? "text-center" : ""}>
       {eyebrow && (
@@ -160,7 +160,7 @@ export function SectionTitle({ eyebrow, title, center = false }: { eyebrow?: str
           <span className="h-px w-8 bg-gold" />
         </div>
       )}
-      <h2 className="mt-4 font-display text-3xl text-granite md:text-5xl">{title}</h2>
+      <h2 className={`mt-4 font-display text-3xl md:text-5xl ${invert ? "text-white" : "text-granite"}`}>{title}</h2>
     </div>
   );
 }
