@@ -225,7 +225,7 @@ function HomePage() {
       {/* MONUMENT TYPES */}
       <section className="granite-texture granite-noise relative py-20 md:py-28">
         <div className="relative mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Wybierz" title="Jakiego nagrobka szukasz?" center />
+          <SectionTitle eyebrow="Wybierz" title="Jakiego nagrobka szukasz?" center invert />
           <p className="mx-auto mt-4 max-w-xl text-center text-sm text-white/60">Kliknij kategorię, żeby zobaczyć realizacje</p>
           <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             {monumentTypes.map((t) => (
