@@ -19,7 +19,10 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "NAGROBEX — Zakład Kamieniarski Poznań" },
       { property: "og:description", content: "Nagrobki granitowe, renowacja, projekty indywidualne. Poznań i Wielkopolska." },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preload", as: "image", href: nagrobek1, fetchpriority: "high" } as any,
+    ],
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({
