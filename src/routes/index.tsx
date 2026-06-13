@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { Star, Phone, ArrowRight, Hammer, PencilRuler, Sparkles, Package, Award, HandHeart, Coins, CalendarCheck, MessageCircle, Quote } from "lucide-react";
 import { PageWrap, SectionTitle, GoldDivider } from "@/components/SiteLayout";
 import { QuoteWidget } from "@/components/QuoteWidget";
-import nagrobek1 from "@/assets/nagrobek-1.jpg";
-import nagrobek2 from "@/assets/nagrobek-2.jpg";
-import nagrobek3 from "@/assets/nagrobek-3.jpg";
-import nagrobek4 from "@/assets/nagrobek-4.jpg";
-import nagrobek5 from "@/assets/nagrobek-5.jpg";
-import warsztat from "@/assets/nagrobek-warsztat.jpg";
-import detal from "@/assets/nagrobek-detal.jpg";
+import nagrobek1 from "@/assets/nagrobek-1.webp";
+import nagrobek2 from "@/assets/nagrobek-2.webp";
+import nagrobek3 from "@/assets/nagrobek-3.webp";
+import nagrobek4 from "@/assets/nagrobek-4.webp";
+import nagrobek5 from "@/assets/nagrobek-5.webp";
+import warsztat from "@/assets/nagrobek-warsztat.webp";
+import detal from "@/assets/nagrobek-detal.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,7 +19,10 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "NAGROBEX — Zakład Kamieniarski Poznań" },
       { property: "og:description", content: "Nagrobki granitowe, renowacja, projekty indywidualne. Poznań i Wielkopolska." },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preload", as: "image", href: nagrobek1, fetchpriority: "high" } as any,
+    ],
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({

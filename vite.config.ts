@@ -11,7 +11,4 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  vite: {
-    assetsInclude: ["**/*.HEIC", "**/*.heic"],
-  },
 });
