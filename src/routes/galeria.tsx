@@ -18,7 +18,7 @@ import nOld9  from "@/assets/564610504_842136365011767_6562503235974255662_n.web
 import nOld10 from "@/assets/703844548_1017523120806423_3790274995248193897_n (2).webp";
 import nOld11 from "@/assets/494141487_710766191482119_6563128306248426608_n.webp";
 import nOld12 from "@/assets/552605846_823846770174060_2509920610635215638_n.webp";
-import nOld13 from "@/assets/645398866_1540871334707128_799992057582408873_n (1).webp";
+
 import nDetal    from "@/assets/nagrobek-detal.webp";
 import nWarsztat from "@/assets/nagrobek-warsztat.webp";
 
