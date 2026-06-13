@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://nagrobex-poznan.pl/sitemap.xml
