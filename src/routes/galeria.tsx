@@ -66,6 +66,16 @@ import n40 from "@/assets/IMG_6050.webp";
 import n41 from "@/assets/IMG_6051.webp";
 import n42 from "@/assets/IMG_6052.webp";
 import n43 from "@/assets/8c6e237b-1af3-4b65-9fd8-d95c1d33134b.webp";
+import n44 from "@/assets/F1303338-610A-42F1-AE99-7B18C81D4F97.jpg";
+import n45 from "@/assets/IMG_1706.jpg";
+import n46 from "@/assets/IMG_1757.jpg";
+import n47 from "@/assets/IMG_2456.jpg";
+import n48 from "@/assets/IMG_2459.jpg";
+import n49 from "@/assets/IMG_3040.jpg";
+import n50 from "@/assets/IMG_3214.jpg";
+import n51 from "@/assets/IMG_3255.jpg";
+import n52 from "@/assets/IMG_3283.jpg";
+import n53 from "@/assets/IMG_3516.jpg";
 
 export const Route = createFileRoute("/galeria")({
   validateSearch: z.object({
@@ -142,6 +152,16 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: n39, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 54" },
   { img: n40, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 55" },
   { img: n41, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 56" },
+  { img: n44, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 57" },
+  { img: n45, type: "Nagrobek pojedynczy",          cats: ["pojedyncze"],                                     desc: "nr, 58" },
+  { img: n46, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 59" },
+  { img: n47, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 60" },
+  { img: n48, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 61" },
+  { img: n49, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 62" },
+  { img: n50, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 63" },
+  { img: n51, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 64" },
+  { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
+  { img: n53, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 66" },
 ];
 
 const FILTERS: { key: "wszystkie" | Cat; label: string }[] = [
