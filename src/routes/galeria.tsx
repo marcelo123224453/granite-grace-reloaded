@@ -58,7 +58,7 @@ import n32 from "@/assets/IMG_6040.webp";
 import n33 from "@/assets/IMG_6042.webp";
 import n34 from "@/assets/IMG_6043.webp";
 import n35 from "@/assets/IMG_6044.webp";
-import n36 from "@/assets/IMG_6046.webp";
+import n36 from "@/assets/Zrzut ekranu 2026-06-21 231656.png";
 import n37 from "@/assets/IMG_6047.webp";
 import n38 from "@/assets/IMG_6048.webp";
 import n39 from "@/assets/IMG_6049.webp";
@@ -71,7 +71,7 @@ import n45 from "@/assets/IMG_1706.jpg";
 import n46 from "@/assets/IMG_1757.jpg";
 import n47 from "@/assets/IMG_2456.jpg";
 import n48 from "@/assets/IMG_2459.jpg";
-import n49 from "@/assets/IMG_3040.jpg";
+import n49 from "@/assets/Zrzut ekranu 2026-06-21 231701.png";
 import n50 from "@/assets/IMG_3214.jpg";
 import n51 from "@/assets/IMG_3255.jpg";
 import n52 from "@/assets/IMG_3283.jpg";
@@ -157,7 +157,7 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: n46, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 59" },
   { img: n47, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 60" },
   { img: n48, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 61" },
-  { img: n49, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 62" },
+  { img: n49, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 62" },
   { img: n50, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 63" },
   { img: n51, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 64" },
   { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
