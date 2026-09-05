@@ -11,6 +11,19 @@ import nagrobek5 from "@/assets/nagrobek-5.webp";
 import warsztat from "@/assets/ChatGPT Image 5 wrz 2026, 19_54_53.png";
 import detal from "@/assets/nagrobek-warsztat.webp";
 
+// KAMIENIE — zdjęcia próbek granitu
+import kamien1 from "@/assets/kamien-1.jpeg";   // Shivakashi
+import kamien2 from "@/assets/kamien-2.jpeg";   // Orion
+import kamien3 from "@/assets/kamien-3.jpeg";   // Gnejs
+import kamien4 from "@/assets/kamien-4.jpeg";   // Verde Marina
+import kamien5 from "@/assets/kamien-5.jpeg";   // Szwed czarny
+import kamien6 from "@/assets/kamien-6.jpeg";   // Impala
+import kamien7 from "@/assets/kamien-7.jpeg";   // Vanga
+import kamien8 from "@/assets/kamien-8.jpeg";   // Ivory Fantasy
+import kamien9 from "@/assets/kamien-9.jpeg";   // Strzegom
+import kamien10 from "@/assets/kamien-10.png";  // Brąz królewski
+import kamien11 from "@/assets/kamien-11.png";  // Viscount White
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -81,11 +94,17 @@ const monumentTypes = [
 ];
 
 const materials = [
-  { name: "Granit czarny", desc: "Klasyczny, elegancki, ponadczasowy.", swatch: "linear-gradient(135deg, #0a0a0a, #2a2a2a)" },
-  { name: "Brąz królewski", desc: "Ciepły odcień, popularny w Poznaniu.", swatch: "linear-gradient(135deg, #4a2520, #8b4a3a)" },
-  { name: "Granit szary", desc: "Stonowany, nowoczesny charakter.", swatch: "linear-gradient(135deg, #555, #888)" },
-  { name: "Granit biały", desc: "Jasny, delikatny — często dla dzieci.", swatch: "linear-gradient(135deg, #d8d2c8, #f0ece4)" },
-  { name: "Multicolor", desc: "Wielobarwny, wyjątkowy efekt.", swatch: "linear-gradient(135deg, #6b5840, #a89878 40%, #5a4f42 70%, #8b7560)" },
+  { name: "Shivakashi", img: kamien1, desc: "Indyjski granit w ciepłej, kremowo-różowej tonacji ze złocistym rysunkiem." },
+  { name: "Orion", img: kamien2, desc: "Ciemne tło z jasnym, wyrazistym wzorem — nowoczesny, mocny kontrast." },
+  { name: "Gnejs", img: kamien3, desc: "Warstwowa, falista struktura. Każda płyta ma niepowtarzalny rysunek." },
+  { name: "Verde Marina", img: kamien4, desc: "Głęboka zieleń z czarnym przełamaniem i połyskliwymi refleksami." },
+  { name: "Szwed czarny", img: kamien5, desc: "Jednolita, głęboka czerń. Klasyka — złocone litery są na niej najlepiej widoczne." },
+  { name: "Impala", img: kamien6, desc: "Szaro-grafitowy granit o drobnym ziarnie, bardzo odporny na warunki atmosferyczne." },
+  { name: "Vanga", img: kamien7, desc: "Bułgarski granit w spokojnej, szaro-beżowej tonacji z delikatnym rysunkiem." },
+  { name: "Ivory Fantasy", img: kamien8, desc: "Jasny, kremowy kamień z brązowo-złotym żyłkowaniem. Rozjaśnia całą kompozycję." },
+  { name: "Strzegom", img: kamien9, desc: "Polski granit z Dolnego Śląska. Jasnoszary, sprawdzony w naszym klimacie." },
+  { name: "Brąz królewski", img: kamien10, desc: "Ciepły, głęboki brąz — jeden z najczęstszych wyborów na poznańskich cmentarzach." },
+  { name: "Viscount White", img: kamien11, desc: "Biało-szare tło z drobnym, ciemnym rysunkiem. Lekki i stonowany." },
 ];
 
 const steps = [
@@ -247,19 +266,30 @@ function HomePage() {
         </div>
       </section>
 
-      {/* MATERIALS */}
+      {/* MATERIALS / KAMIENIE */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Materiał" title="Granit — kamień na wieki" center />
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <SectionTitle eyebrow="Materiał" title="Kamienie, z których pracujemy" center />
+          <p className="mx-auto mt-4 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground md:text-base">
+            Granit z całego świata i z polskich kamieniołomów. Każdy blok ma własny rysunek, więc gotowy nagrobek nigdy nie jest identyczny z innym.
+          </p>
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {materials.map((m, i) => (
               <motion.div
                 key={m.name}
                 {...fadeIn}
-                transition={{ duration: 0.6, delay: i * 0.08 }}
-                className="group border border-border bg-card transition-all hover:border-gold hover:shadow-lg"
+                transition={{ duration: 0.6, delay: (i % 4) * 0.08 }}
+                className="group overflow-hidden border border-border bg-card transition-all hover:border-gold hover:shadow-lg"
               >
-                <div className="aspect-[4/3] w-full transition-transform group-hover:scale-[1.02]" style={{ background: m.swatch }} aria-hidden="true" />
+                <div className="aspect-[4/3] w-full overflow-hidden">
+                  <img
+                    src={m.img}
+                    alt={`${m.name} — granit na nagrobki, Poznań`}
+                    loading="lazy"
+                    decoding="async"
+                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
                 <div className="p-5">
                   <h3 className="font-display text-lg text-granite">{m.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{m.desc}</p>
@@ -267,6 +297,13 @@ function HomePage() {
               </motion.div>
             ))}
           </div>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
+            Kolory na zdjęciach mogą nieznacznie różnić się od oryginału. Próbki kamienia obejrzysz na miejscu w zakładzie przy Obornickiej 306 —{" "}
+            <Link to="/kontakt" className="text-granite underline decoration-gold/60 underline-offset-4 hover:text-gold">
+              umów się na spotkanie
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
