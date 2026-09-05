@@ -86,6 +86,7 @@ import n2000 from "@/assets/WhatsApp Image 2026-09-05 at 21.45.251.jpeg";
 import n1001 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.441.jpeg";
 import n1000 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.44.jpeg";
 import n1002 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.442.jpeg";
+import n2005 from "@/assets/WhatsApp Image 2026-09-05 at 22.07.15.jpeg";
 
 // ── przed/po ──
 
@@ -191,11 +192,12 @@ const items: Item[] = [
   { img: n201, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 69" },
   { img: n202, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 70" },
   { img: n203, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 71" },
-  { img: n1000, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 72" },
-  { img: n1001, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 73" },
-  { img: n1002, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 74" },
-  { img: n2000, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 75" },
-  { img: n3000, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 76", square: true },
+  { img: n2005, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 72" },
+  { img: n1000, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 73" },
+  { img: n1001, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 74" },
+  { img: n1002, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 75" },
+  { img: n2000, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 76" },
+  { img: n3000, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 77", square: true },
 
   { img: przedpo1, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
   { img: przedpo2, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
