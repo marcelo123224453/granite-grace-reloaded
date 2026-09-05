@@ -156,7 +156,7 @@ function HomePage() {
           <motion.div {...fadeIn} transition={{ duration: 0.8, delay: 0.5 }} className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/65 md:text-sm">
             <span className="flex items-center gap-1"><Star className="size-4 fill-gold text-gold" /> 4.8 / 5 Google</span>
             <span className="opacity-30">·</span>
-            <span>114 opinii</span>
+            <span>129 opinii</span>
             <span className="opacity-30">·</span>
             <span>Poznań i Wielkopolska</span>
             <span className="opacity-30">·</span>
@@ -181,7 +181,7 @@ function HomePage() {
                 { icon: HandHeart, label: "Fachowe doradztwo" },
                 { icon: Coins, label: "Przystępne ceny" },
                 { icon: CalendarCheck, label: "Terminowa realizacja" },
-                { icon: Award, label: "114 opinii · 4.8★" },
+                { icon: Award, label: "129 opinii · 4.8★" },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-3 border-l-2 border-gold/60 pl-3">
                   <Icon className="size-5 shrink-0 text-gold" />
@@ -298,7 +298,7 @@ function HomePage() {
           <SectionTitle eyebrow="Opinie klientów" title="Zaufały nam dziesiątki rodzin" center />
           <div className="mt-4 flex justify-center gap-1">
             {[...Array(5)].map((_, i) => <Star key={i} className="size-5 fill-gold text-gold" />)}
-            <span className="ml-2 font-mono text-sm text-muted-foreground">4.8 / 5 · 114 opinii Google</span>
+            <span className="ml-2 font-mono text-sm text-muted-foreground">4.8 / 5 · 129 opinii Google</span>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t, i) => (
