@@ -83,7 +83,7 @@ import n100 from "@/assets/WhatsApp Image 2026-09-05 at 21.08.29.jpeg";
 import n202 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.3412.jpeg"; 
 import n3000 from "@/assets/WhatsApp Image 2026-09-05 at 21.46.112.jpeg";
 import n2000 from "@/assets/WhatsApp Image 2026-09-05 at 21.45.251.jpeg";
-import n1001 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.441.jpeg.jpeg";
+import n1001 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.441.jpeg";
 import n1000 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.44.jpeg";
 import n1002 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.442.jpeg";
 
