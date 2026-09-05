@@ -77,6 +77,14 @@ import n51 from "@/assets/IMG_3255.jpg";
 import n52 from "@/assets/IMG_3283.jpg";
 import n53 from "@/assets/IMG_3516.jpg";
 
+// ── przed/po ──
+
+import przedpo1 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_50.png";
+import przedpo2 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_48.png";
+import przedpo3 from "@/assets/WhatsApp Image 2026-09-05 at 21.07.06.jpeg";
+import przedpo4 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_52.png";
+import przedpo5 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_54.png";
+
 export const Route = createFileRoute("/galeria")({
   validateSearch: z.object({
     kategoria: z
@@ -101,7 +109,6 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: nOld6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                           desc: "nr, 3" },
   { img: nOld7,  type: "Naprawy/Renowacja",       cats: ["Naprawy/Renowacja"],                                   desc: "nr, 4" },
   { img: nOld8,  type: "Nagrobek podwójny",        cats: ["podwojne"],                           desc: "nr, 5" },
-  { img: nOld9,  type: "Naprawa/Renowacja",        cats: ["Naprawy/Renowacja"],                           desc: "nr, 6" },
   { img: nOld2,  type: "Nagrobek podwójny",        cats: ["podwojne"],                                    desc: "nr, 7" },
   { img: nOld3,  type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 8" },
   { img: nOld4,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 9" },
@@ -162,6 +169,12 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: n51, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 64" },
   { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
   { img: n53, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 66" },
+
+  { img: przedpo1, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
+  { img: przedpo2, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
+  { img: przedpo3, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
+  { img: przedpo4, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
+  { img: przedpo5, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
 ];
 
 const FILTERS: { key: "wszystkie" | Cat; label: string }[] = [
