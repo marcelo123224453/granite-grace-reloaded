@@ -76,6 +76,11 @@ import n50 from "@/assets/IMG_3214.jpg";
 import n51 from "@/assets/IMG_3255.jpg";
 import n52 from "@/assets/IMG_3283.jpg";
 import n53 from "@/assets/IMG_3516.jpg";
+import n54 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.342.jpeg";
+import n55 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.341.jpeg";
+import n56 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.34.jpeg";
+import n57 from "@/assets/WhatsApp Image 2026-09-05 at 21.08.29.jpeg";
+import n58 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.3412.jpeg";
 
 // ── przed/po ──
 
