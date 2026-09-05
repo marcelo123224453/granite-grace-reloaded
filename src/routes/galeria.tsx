@@ -76,11 +76,16 @@ import n50 from "@/assets/IMG_3214.jpg";
 import n51 from "@/assets/IMG_3255.jpg";
 import n52 from "@/assets/IMG_3283.jpg";
 import n53 from "@/assets/IMG_3516.jpg";
-import n54 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.342.jpeg";
-import n55 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.341.jpeg";
-import n56 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.34.jpeg";
-import n57 from "@/assets/WhatsApp Image 2026-09-05 at 21.08.29.jpeg";
-import n58 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.3412.jpeg";
+import n203 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.342.jpeg";
+import n201 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.341.jpeg";
+import n200 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.34.jpeg";
+import n100 from "@/assets/WhatsApp Image 2026-09-05 at 21.08.29.jpeg";
+import n202 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.3412.jpeg"; 
+import n3000 from "@/assets/WhatsApp Image 2026-09-05 at 21.46.112.jpeg";
+import n2000 from "@/assets/WhatsApp Image 2026-09-05 at 21.45.251.jpeg";
+import n1001 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.441.jpeg.jpeg";
+import n1000 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.44.jpeg";
+import n1002 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.442.jpeg";
 
 // ── przed/po ──
 
@@ -152,7 +157,6 @@ const items: Item[] = [
   { img: n18, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 33" },
   { img: n19, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 34" },
   { img: n20, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 35" },
-  { img: n21, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 36" },
   { img: n22, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 37" },
   { img: n23, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 38" },
   { img: n24, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 39" },
@@ -165,7 +169,6 @@ const items: Item[] = [
   { img: n31, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 46" },
   { img: n32, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
   { img: n33, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 48" },
-  { img: n34, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 49" },
   { img: n35, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 50" },
   { img: n36, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 51" },
   { img: n37, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 52" },
@@ -183,6 +186,16 @@ const items: Item[] = [
   { img: n51, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 64" },
   { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
   { img: n53, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 66" },
+  { img: n100, type: "Grobowiec",        cats: ["Grobowiec"],                                   desc: "nr, 67" },
+  { img: n200, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 68" },
+  { img: n201, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 69" },
+  { img: n202, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 63" },
+  { img: n203, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 64" },
+  { img: n1000, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
+  { img: n1001, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
+  { img: n1002, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
+  { img: n2000, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 57" },
+  { img: n3000, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 14" },
 
   { img: przedpo1, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
   { img: przedpo2, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
