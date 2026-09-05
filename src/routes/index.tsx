@@ -102,6 +102,7 @@ const testimonials = [
   { name: "Monika K.", text: "Pan Kamil doradził, pomógł podjąć decyzję na spokojnie bez żadnej presji. Po prostu czuć że klient dla Nich jest ważniejszy od zarobku." },
   { name: "Filip Przykucki-Zyzak", text: "Cena robocizny i samego materiału była bardzo konkurencyjna biorąc pod uwagę ceny innych zakładów kamieniarskich." },
   { name: "Mikołaj Ganz", text: "Od początku do końca profesjonalne podejście, fachowa wiedza, pomoc i doradztwo na każdym etapie począwszy od wyboru nagrobka aż do końcowego postawienia." },
+
 ];
 
 const fadeIn = { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: "-80px" }, transition: { duration: 0.8, ease: "easeOut" as const } };
