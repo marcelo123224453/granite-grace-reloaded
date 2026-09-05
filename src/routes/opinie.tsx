@@ -6,8 +6,8 @@ import { PageWrap, SectionTitle } from "@/components/SiteLayout";
 export const Route = createFileRoute("/opinie")({
   head: () => ({
     meta: [
-      { title: "Opinie — 4.8★ na Google, 114 opinii | NAGROBEX Poznań" },
-      { name: "description", content: "Opinie klientów NAGROBEX — 4.8/5 w Google, 114 opinii. Co mówią o nas rodziny z Poznania i Wielkopolski." },
+      { title: "Opinie — 4.8★ na Google, 129 opinii | NAGROBEX Poznań" },
+      { name: "description", content: "Opinie klientów NAGROBEX — 4.8/5 w Google, 129 opinii. Co mówią o nas rodziny z Poznania i Wielkopolski." },
     ],
     links: [{ rel: "canonical", href: "/opinie" }],
   }),
