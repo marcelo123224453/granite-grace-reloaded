@@ -102,7 +102,7 @@ const testimonials = [
   { name: "Monika K.", text: "Pan Kamil doradził, pomógł podjąć decyzję na spokojnie bez żadnej presji. Po prostu czuć że klient dla Nich jest ważniejszy od zarobku." },
   { name: "Filip Przykucki-Zyzak", text: "Cena robocizny i samego materiału była bardzo konkurencyjna biorąc pod uwagę ceny innych zakładów kamieniarskich." },
   { name: "Mikołaj Ganz", text: "Od początku do końca profesjonalne podejście, fachowa wiedza, pomoc i doradztwo na każdym etapie począwszy od wyboru nagrobka aż do końcowego postawienia." },
-  { name: "Katarzyna Gatniejewska", text: "Serdecznie polecamy tę firmę. Jesteśmy bardzo zadowoleni z wykonania nagrobka. Wszystko przebiegło sprawnie, w miłej atmosferze i zgodnie z ustaleniami. Termin realizacji został dotrzymany a jakość wykonania naprawdę świetna. Nagrobek wygląda pięknie i starannie. Dziękujemy za profesjonalną obsługę i polecamy " },
+  { name: "Katarzyna Gatniejewska", text: "Polecam zwłaszcza przy projektach niestandardowych. Wspaniały kontakt z właścicielem. Ludzkie podejście i przystępne ceny. Na każdym etapie projektu byłam informowana na bieżąco. Bardzo dziękuję za pomoc." },
 ];
 
 const fadeIn = { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: "-80px" }, transition: { duration: 0.8, ease: "easeOut" as const } };
