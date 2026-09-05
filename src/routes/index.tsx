@@ -8,8 +8,8 @@ import nagrobek2 from "@/assets/nagrobek-2.webp";
 import nagrobek3 from "@/assets/nagrobek-3.webp";
 import nagrobek4 from "@/assets/nagrobek-4.webp";
 import nagrobek5 from "@/assets/nagrobek-5.webp";
-import warsztat from "@/assets/nagrobek-detal.webp";
-import detal from "@/assets/ChatGPT Image 5 wrz 2026, 19_54_53.png";
+import warsztat from "@/assets/ChatGPT Image 5 wrz 2026, 19_54_53.png";
+import detal from "@/assets/nagrobek-warsztat.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
