@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "NAGROBEX — Zakład Kamieniarski Poznań | Nagrobki granitowe, renowacja | 515 486 550" },
-      { name: "description", content: "NAGROBEX Poznań — nagrobki granitowe, renowacja, projekty indywidualne. 4.8★ Google, 114 opinii. Pan Kamil doradzi osobiście. Bezpłatna wycena." },
+      { name: "description", content: "NAGROBEX Poznań — nagrobki granitowe, renowacja, projekty indywidualne. 4.8★ Google, 129 opinii. Pan Kamil doradzi osobiście. Bezpłatna wycena." },
       { property: "og:title", content: "NAGROBEX — Zakład Kamieniarski Poznań" },
       { property: "og:description", content: "Nagrobki granitowe, renowacja, projekty indywidualne. Poznań i Wielkopolska." },
     ],
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
           { "@type": "City", name: "Poznań" },
           { "@type": "AdministrativeArea", name: "Wielkopolska" },
         ],
-        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "114" },
+        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "129" },
         sameAs: ["https://www.facebook.com/p/Nagrobex-100076462323777/"],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
