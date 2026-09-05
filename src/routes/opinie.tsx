@@ -45,7 +45,7 @@ function OpiniePage() {
               ))}
             </div>
           </motion.div>
-          <h1 className="mt-6 font-display text-3xl text-white md:text-5xl">114 opinii na Google</h1>
+          <h1 className="mt-6 font-display text-3xl text-white md:text-5xl">129 opinii na Google</h1>
           <p className="mx-auto mt-4 max-w-xl text-white/70">Dziękujemy każdej rodzinie, która zaufała naszemu zakładowi.</p>
         </div>
       </section>
