@@ -12,17 +12,17 @@ import warsztat from "@/assets/ChatGPT Image 5 wrz 2026, 19_54_53.png";
 import detal from "@/assets/nagrobek-warsztat.webp";
 
 // KAMIENIE — zdjęcia próbek granitu
-import kamien1 from "@/assets/kamien-1.jpeg";   // Shivakashi
-import kamien2 from "@/assets/kamien-2.jpeg";   // Orion
-import kamien3 from "@/assets/kamien-3.jpeg";   // Gnejs
-import kamien4 from "@/assets/kamien-4.jpeg";   // Verde Marina
-import kamien5 from "@/assets/kamien-5.jpeg";   // Szwed czarny
-import kamien6 from "@/assets/kamien-6.jpeg";   // Impala
-import kamien7 from "@/assets/kamien-7.jpeg";   // Vanga
-import kamien8 from "@/assets/kamien-8.jpeg";   // Ivory Fantasy
-import kamien9 from "@/assets/kamien-9.jpeg";   // Strzegom
-import kamien10 from "@/assets/kamien-10.png";  // Brąz królewski
-import kamien11 from "@/assets/kamien-11.png";  // Viscount White
+import kamien1 from "@/assets/WhatsApp Image 2026-09-05 at 19.59.29.jpeg";   // Shivakashi
+import kamien2 from "@/assets/WhatsApp Image 2026-09-05 at 20.01.42.jpeg";   // Orion
+import kamien3 from "@/assets/WhatsApp Image 2026-09-05 at 20.03.33.jpeg";   // Gnejs
+import kamien4 from "@/assets/WhatsApp Image 2026-09-05 at 20.04.59.jpeg";   // Verde Marina
+import kamien5 from "@/assets/WhatsApp Image 2026-09-05 at 20.05.56.jpeg";   // Szwed czarny
+import kamien6 from "@/assets/WhatsApp Image 2026-09-05 at 20.06.22.jpeg";   // Impala
+import kamien7 from "@/assets/WhatsApp Image 2026-09-05 at 20.07.20.jpeg";   // Vanga
+import kamien8 from "@/assets/WhatsApp Image 2026-09-05 at 20.08.38.jpeg";   // Ivory Fantasy
+import kamien9 from "@/assets/WhatsApp Image 2026-09-05 at 20.10.24.jpeg";   // Strzegom
+import kamien10 from "@/assets/ChatGPT Image 5 wrz 2026, 20_14_30.png";      // Brąz królewski
+import kamien11 from "@/assets/ChatGPT Image 5 wrz 2026, 20_14_38.png";      // Viscount White
 
 export const Route = createFileRoute("/")({
   head: () => ({
