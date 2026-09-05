@@ -103,7 +103,16 @@ export const Route = createFileRoute("/galeria")({
 
 type Cat = "pojedyncze" | "podwojne" | "Naprawy/Renowacja" | "dzieciece" | "Grobowiec" | "liternictwo/galatria/grawery";
 
-const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
+type Item = {
+  img: string;
+  type: string;
+  cats: Cat[];
+  desc: string;
+  /** kafelek 1:1 z pełnym zdjęciem (bez przycinania) — dla porównań przed/po */
+  square?: boolean;
+};
+
+const items: Item[] = [
   { img: nOld1,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 1" },
   { img: nOld10, type: "Naprawy/Renowacja",        cats: ["Naprawy/Renowacja"],                                    desc: "nr, 2" },
   { img: nOld6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                           desc: "nr, 3" },
@@ -170,11 +179,11 @@ const items: { img: string; type: string; cats: Cat[]; desc: string }[] = [
   { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
   { img: n53, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 66" },
 
-  { img: przedpo1, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
-  { img: przedpo2, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
-  { img: przedpo3, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
-  { img: przedpo4, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
-  { img: przedpo5, type: "Naprawy/Renowacja",                 cats: ["Naprawy/Renowacja"],                                     desc: "" },
+  { img: przedpo1, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
+  { img: przedpo2, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
+  { img: przedpo3, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
+  { img: przedpo4, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
+  { img: przedpo5, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
 ];
 
 const FILTERS: { key: "wszystkie" | Cat; label: string }[] = [
@@ -222,7 +231,7 @@ function GaleriaPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <AnimatePresence mode="popLayout">
               {filtered.map((it, i) => (
                 <motion.figure
@@ -234,8 +243,19 @@ function GaleriaPage() {
                   transition={{ duration: 0.5 }}
                   className="group overflow-hidden border border-border bg-card transition-all hover:border-gold hover:shadow-xl"
                 >
-                  <div className="aspect-[4/5] overflow-hidden bg-granite">
-                    <img src={it.img} alt={`${it.type} — realizacja NAGROBEX Poznań, nagrobki granitowe`} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className={`overflow-hidden bg-granite ${it.square ? "aspect-square" : "aspect-[4/5]"}`}>
+                    <img
+                      src={it.img}
+                      alt={it.square
+                        ? `Renowacja nagrobka — przed i po, NAGROBEX Poznań`
+                        : `${it.type} — realizacja NAGROBEX Poznań, nagrobki granitowe`}
+                      loading="lazy"
+                      className={
+                        it.square
+                          ? "size-full object-contain transition-opacity duration-500 group-hover:opacity-90"
+                          : "size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      }
+                    />
                   </div>
                   <figcaption className="border-t border-border p-5">
                     <h3 className="font-display text-lg text-granite">{it.type}</h3>
