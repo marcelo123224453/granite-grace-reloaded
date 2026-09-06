@@ -269,7 +269,7 @@ function HomePage() {
       {/* MATERIALS / KAMIENIE */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Materiał" title="Kamienie, z których pracujemy" center />
+          <SectionTitle eyebrow="Materiał" title="Kamienie, na których pracujemy" center />
           <p className="mx-auto mt-4 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground md:text-base">
             Granit z całego świata i z polskich kamieniołomów. Każdy blok ma własny rysunek, więc gotowy nagrobek nigdy nie jest identyczny z innym.
           </p>
