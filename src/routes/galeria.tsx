@@ -6,100 +6,92 @@ import { PageWrap, SectionTitle } from "@/components/SiteLayout";
 import { ArrowRight } from "lucide-react";
 
 // ── Stare zdjęcia ──
-import nOld1  from "@/assets/nagrobek-1.webp";
-import nOld2  from "@/assets/nagrobek-2.webp";
-import nOld3  from "@/assets/nagrobek-3.webp";
-import nOld4  from "@/assets/nagrobek-4.webp";
-import nOld5  from "@/assets/nagrobek-5.webp";
-import nOld6  from "@/assets/673414230_992487589976643_5370561090871691160_n.webp";
-import nOld7  from "@/assets/569516638_849008100991260_4224958326701579055_n.webp";
-import nOld8  from "@/assets/565679113_846124567946280_8598260601751854206_n.webp";
-import nOld9  from "@/assets/564610504_842136365011767_6562503235974255662_n.webp";
-import nOld10 from "@/assets/703844548_1017523120806423_3790274995248193897_n (2).webp";
-import nOld11 from "@/assets/494141487_710766191482119_6563128306248426608_n.webp";
-import nOld12 from "@/assets/552605846_823846770174060_2509920610635215638_n.webp";
-
-import nDetal    from "@/assets/nagrobek-detal.webp";
-import nWarsztat from "@/assets/nagrobek-warsztat.webp";
+import nOld1  from "@/assets/nagrobek-1.jpg";
+import nOld2  from "@/assets/nagrobek-2.jpg";
+import nOld3  from "@/assets/nagrobek-3.jpg";
+import nOld4  from "@/assets/nagrobek-4.jpg";
+import nOld5  from "@/assets/nagrobek-5.jpg";
+import nOld6  from "@/assets/673414230_992487589976643_5370561090871691160_n.jpg";
+import nOld7  from "@/assets/569516638_849008100991260_4224958326701579055_n.jpg";
+import nOld8  from "@/assets/565679113_846124567946280_8598260601751854206_n.jpg";
+import nOld9  from "@/assets/564610504_842136365011767_6562503235974255662_n.jpg";
+import nOld10 from "@/assets/703844548_1017523120806423_3790274995248193897_n (2).jpg";
+import nOld11 from "@/assets/494141487_710766191482119_6563128306248426608_n.jpg";
+import nOld12 from "@/assets/552605846_823846770174060_2509920610635215638_n.jpg";
+import nOld13 from "@/assets/645398866_1540871334707128_799992057582408873_n (1).jpg";
+import nDetal    from "@/assets/nagrobek-detal.jpg";
+import nWarsztat from "@/assets/nagrobek-warsztat.jpg";
 
 // ── Nowe zdjęcia IMG_6xxx ──
-import n1  from "@/assets/IMG_6006.webp";
-import n2  from "@/assets/IMG_6008.webp";
-import n3  from "@/assets/IMG_6009.webp";
-import n4  from "@/assets/IMG_6015.webp";
-import n5  from "@/assets/IMG_6016.webp";
-import n6  from "@/assets/IMG_6011.webp";
-import n7  from "@/assets/IMG_6012.webp";
-import n8  from "@/assets/IMG_6013.webp";
-import n9  from "@/assets/IMG_6014.webp";
-import n10 from "@/assets/IMG_6017.webp";
-import n11 from "@/assets/IMG_6019.webp";
-import n12 from "@/assets/IMG_6020.webp";
-import n13 from "@/assets/IMG_6021.webp";
-import n14 from "@/assets/IMG_6022.webp";
-import n15 from "@/assets/IMG_6023.webp";
-import n16 from "@/assets/IMG_6018.webp";
-import n17 from "@/assets/IMG_6025.webp";
-import n18 from "@/assets/IMG_6026.webp";
-import n19 from "@/assets/IMG_6029.webp";
-import n20 from "@/assets/IMG_6031.webp";
-import n21 from "@/assets/IMG_6033.webp";
-import n22 from "@/assets/IMG_6034.webp";
-import n23 from "@/assets/IMG_6027.webp";
-import n24 from "@/assets/IMG_6028.webp";
-import n25 from "@/assets/IMG_6030.webp";
-import n26 from "@/assets/IMG_6032.webp";
-import n27 from "@/assets/IMG_6035.webp";
-import n28 from "@/assets/IMG_6036.webp";
-import n29 from "@/assets/IMG_6037.webp";
-import n30 from "@/assets/IMG_6038.webp";
-import n31 from "@/assets/IMG_6039.webp";
-import n32 from "@/assets/IMG_6040.webp";
-import n33 from "@/assets/IMG_6042.webp";
-import n34 from "@/assets/IMG_6043.webp";
-import n35 from "@/assets/IMG_6044.webp";
-import n36 from "@/assets/Zrzut ekranu 2026-06-21 231656.png";
-import n37 from "@/assets/IMG_6047.webp";
-import n38 from "@/assets/IMG_6048.webp";
-import n39 from "@/assets/IMG_6049.webp";
-import n40 from "@/assets/IMG_6050.webp";
-import n41 from "@/assets/IMG_6051.webp";
-import n42 from "@/assets/IMG_6052.webp";
-import n43 from "@/assets/8c6e237b-1af3-4b65-9fd8-d95c1d33134b.webp";
-import n44 from "@/assets/F1303338-610A-42F1-AE99-7B18C81D4F97.jpg";
-import n45 from "@/assets/IMG_1706.jpg";
-import n46 from "@/assets/IMG_1757.jpg";
-import n47 from "@/assets/IMG_2456.jpg";
-import n48 from "@/assets/IMG_2459.jpg";
-import n49 from "@/assets/Zrzut ekranu 2026-06-21 231701.png";
-import n50 from "@/assets/IMG_3214.jpg";
-import n51 from "@/assets/IMG_3255.jpg";
-import n52 from "@/assets/IMG_3283.jpg";
-import n53 from "@/assets/IMG_3516.jpg";
-import n203 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.342.jpeg";
-import n201 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.341.jpeg";
-import n200 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.34.jpeg";
-import n100 from "@/assets/WhatsApp Image 2026-09-05 at 21.08.29.jpeg";
-import n202 from "@/assets/WhatsApp Image 2026-09-05 at 21.09.3412.jpeg"; 
-import n3000 from "@/assets/WhatsApp Image 2026-09-05 at 21.46.112.jpeg";
-import n2000 from "@/assets/WhatsApp Image 2026-09-05 at 21.45.251.jpeg";
-import n1001 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.441.jpeg";
-import n1000 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.44.jpeg";
-import n1002 from "@/assets/WhatsApp Image 2026-09-05 at 21.42.442.jpeg";
-import n2005 from "@/assets/WhatsApp Image 2026-09-05 at 22.07.15.jpeg";
+import n1  from "@/assets/IMG_6006.HEIC";
+import n2  from "@/assets/IMG_6008.HEIC";
+import n3  from "@/assets/IMG_6009.HEIC";
+import n4  from "@/assets/IMG_6015.HEIC";
+import n5  from "@/assets/IMG_6016.HEIC";
+import n6  from "@/assets/IMG_6011.JPG";
+import n7  from "@/assets/IMG_6012.JPG";
+import n8  from "@/assets/IMG_6013.JPG";
+import n9  from "@/assets/IMG_6014.JPG";
+import n10 from "@/assets/IMG_6017.HEIC";
+import n11 from "@/assets/IMG_6019.HEIC";
+import n12 from "@/assets/IMG_6020.HEIC";
+import n13 from "@/assets/IMG_6021.HEIC";
+import n14 from "@/assets/IMG_6022.HEIC";
+import n15 from "@/assets/IMG_6023.HEIC";
+import n16 from "@/assets/IMG_6018.JPG";
+import n17 from "@/assets/IMG_6025.JPG";
+import n18 from "@/assets/IMG_6026.JPG";
+import n19 from "@/assets/IMG_6029.HEIC";
+import n20 from "@/assets/IMG_6031.HEIC";
+import n21 from "@/assets/IMG_6033.HEIC";
+import n22 from "@/assets/IMG_6034.HEIC";
+import n23 from "@/assets/IMG_6027.JPG";
+import n24 from "@/assets/IMG_6028.JPG";
+import n25 from "@/assets/IMG_6030.PNG";
+import n26 from "@/assets/IMG_6032.JPG";
+import n27 from "@/assets/IMG_6035.HEIC";
+import n28 from "@/assets/IMG_6036.HEIC";
+import n29 from "@/assets/IMG_6037.HEIC";
+import n30 from "@/assets/IMG_6038.HEIC";
+import n31 from "@/assets/IMG_6039.HEIC";
+import n32 from "@/assets/IMG_6040.HEIC";
+import n33 from "@/assets/IMG_6042.HEIC";
+import n34 from "@/assets/IMG_6043.HEIC";
+import n35 from "@/assets/IMG_6044.HEIC";
+import n36 from "@/assets/IMG_6046.HEIC";
+import n37 from "@/assets/IMG_6047.HEIC";
+import n38 from "@/assets/IMG_6048.HEIC";
+import n39 from "@/assets/IMG_6049.HEIC";
+import n40 from "@/assets/IMG_6050.HEIC";
+import n41 from "@/assets/IMG_6051.HEIC";
+import n42 from "@/assets/IMG_6052.HEIC";
+import n43 from "@/assets/8c6e237b-1af3-4b65-9fd8-d95c1d33134b.JPG";
 
-// ── przed/po ──
+// ── Nowe zdjęcia — nagrobki pojedyncze ──
+import n44 from "@/assets/IMG_6254.HEIC";
+import n45 from "@/assets/IMG_6303.HEIC";
+import n46 from "@/assets/IMG_6305.HEIC";
+import n47 from "@/assets/IMG_6363.HEIC";
+import n48 from "@/assets/IMG_6614.HEIC";
+import n49 from "@/assets/IMG_6644.HEIC";
+import n50 from "@/assets/IMG_6756.HEIC";
+import n51 from "@/assets/IMG_7272.HEIC";
+import n52 from "@/assets/IMG_6915.HEIC";
+import n53 from "@/assets/IMG_6773.HEIC";
+import n54 from "@/assets/IMG_7294.HEIC";
+import n55 from "@/assets/IMG_7545.HEIC";
 
-import przedpo1 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_50.png";
-import przedpo2 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_48.png";
-import przedpo3 from "@/assets/WhatsApp Image 2026-09-05 at 21.07.06.jpeg";
-import przedpo4 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_52.png";
-import przedpo5 from "@/assets/ChatGPT Image 5 wrz 2026, 20_44_54.png";
+// ── Nowe zdjęcia — nagrobki podwójne ──
+import n56 from "@/assets/IMG_5985.HEIC";
+import n57 from "@/assets/IMG_6912.HEIC";
+
+// ── Nowe zdjęcia — naprawy i renowacje ──
+import n58 from "@/assets/WhatsApp Image 2026-10-25 at 11.46.33.jpeg";
 
 export const Route = createFileRoute("/galeria")({
   validateSearch: z.object({
     kategoria: z
-      .enum(["wszystkie", "pojedyncze", "podwojne", "Naprawy/Renowacja", "dzieciece", "Grobowiec", "liternictwo/galatria/grawery"])
+      .enum(["wszystkie", "pojedyncze", "podwojne", "urnowe", "dzieciece", "rodzinne", "nowoczesne", "renowacje"])
       .optional(),
   }),
   head: () => ({
@@ -112,108 +104,93 @@ export const Route = createFileRoute("/galeria")({
   component: GaleriaPage,
 });
 
-type Cat = "pojedyncze" | "podwojne" | "Naprawy/Renowacja" | "dzieciece" | "Grobowiec" | "liternictwo/galatria/grawery";
+type Cat = "pojedyncze" | "podwojne" | "urnowe" | "dzieciece" | "rodzinne" | "nowoczesne" | "renowacje";
 
-type Item = {
-  img: string;
-  type: string;
-  cats: Cat[];
-  desc: string;
-  /** kafelek 1:1 z pełnym zdjęciem (bez przycinania) — dla porównań przed/po */
-  square?: boolean;
-};
-
-const items: Item[] = [
-  { img: nOld1,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 1" },
-  { img: nOld10, type: "Naprawy/Renowacja",        cats: ["Naprawy/Renowacja"],                                    desc: "nr, 2" },
-  { img: nOld6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                           desc: "nr, 3" },
-  { img: nOld7,  type: "Naprawy/Renowacja",       cats: ["Naprawy/Renowacja"],                                   desc: "nr, 4" },
-  { img: nOld8,  type: "Nagrobek podwójny",        cats: ["podwojne"],                           desc: "nr, 5" },
-  { img: nOld2,  type: "Nagrobek podwójny",        cats: ["podwojne"],                                    desc: "nr, 7" },
-  { img: nOld3,  type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 8" },
-  { img: nOld4,  type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 9" },
-  { img: nOld5,  type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 10" },
-  { img: nOld11, type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 11" },
-  { img: nOld12, type: "Nagrobek pojedynczy",      cats: ["pojedyncze"],                                  desc: "nr, 12" },
-  { img: n43,    type: "Grobowiec",               cats: ["Grobowiec"],                                    desc: "nr, 13" },
-  { img: nDetal, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 14" },
-  { img: nWarsztat, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],                                   desc: "nr, 15" },
-  { img: n1,  type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 16" },
-  { img: n2,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 17" },
-  { img: n3,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 18" },
-  { img: n4,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 19" },
-  { img: n5,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 20" },
-  { img: n6,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 21" },
-  { img: n7,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 22" },
-  { img: n8,  type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 23" },
-  { img: n9,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 24" },
-  { img: n10, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 25" },
-  { img: n11, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 26" },
-  { img: n12, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 27" },
-  { img: n13, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 28" },
-  { img: n14, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 29" },
-  { img: n15, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 30" },
-  { img: n16, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 31" },
-  { img: n17, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 32" },
-  { img: n18, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 33" },
-  { img: n19, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 34" },
-  { img: n20, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 35" },
-  { img: n22, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 37" },
-  { img: n23, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 38" },
-  { img: n24, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 39" },
-  { img: n25, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 40" },
-  { img: n26, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 41" },
-  { img: n27, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 42" },
-  { img: n28, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 43" },
-  { img: n29, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 44" },
-  { img: n30, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 45" },
-  { img: n31, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 46" },
-  { img: n32, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 47" },
-  { img: n33, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 48" },
-  { img: n35, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 50" },
-  { img: n36, type: "Nagrobek podwójny",          cats: ["podwojne"],                                     desc: "nr, 51" },
-  { img: n37, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 52" },
-  { img: n38, type: "Grobowiec",                 cats: ["Grobowiec"],                                     desc: "nr, 53" },
-  { img: n39, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 54" },
-  { img: n40, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 55" },
-  { img: n41, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 56" },
-  { img: n44, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 57" },
-  { img: n45, type: "Nagrobek pojedynczy",          cats: ["pojedyncze"],                                     desc: "nr, 58" },
-  { img: n46, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 59" },
-  { img: n47, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 60" },
-  { img: n48, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 61" },
-  { img: n49, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 62" },
-  { img: n50, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 63" },
-  { img: n51, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 64" },
-  { img: n52, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 65" },
-  { img: n53, type: "Nagrobek dziecięcy",                 cats: ["dzieciece"],                                     desc: "nr, 66" },
-  { img: n100, type: "Grobowiec",        cats: ["Grobowiec"],                                   desc: "nr, 67" },
-  { img: n200, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 68" },
-  { img: n201, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 69" },
-  { img: n202, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 70" },
-  { img: n203, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 71" },
-  { img: n2005, type: "Nagrobek podwójny",        cats: ["podwojne"],                                   desc: "nr, 72" },
-  { img: n1000, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 73" },
-  { img: n1001, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 74" },
-  { img: n1002, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                                   desc: "nr, 75" },
-  { img: n2000, type: "Nagrobek dziecięcy",        cats: ["dzieciece"],                                   desc: "nr, 76" },
-  { img: n3000, type: "Liternictwo/Galanteria/Grawery", cats: ["liternictwo/galatria/grawery"],          desc: "nr, 77", square: true },
-
-  { img: przedpo1, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
-  { img: przedpo2, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
-  { img: przedpo3, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
-  { img: przedpo4, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
-  { img: przedpo5, type: "Naprawy/Renowacja",     cats: ["Naprawy/Renowacja"],                            desc: "Przed → Po", square: true },
+const items: { img: string; type: string; cats: Cat[]; desc: string; contain?: boolean }[] = [
+  { img: nOld1,  type: "Grobowiec rodzinny",        cats: ["rodzinne", "podwojne"],                desc: "Granit czarny, polerowany · Poznań" },
+  { img: nOld10, type: "Nagrobek dziecięcy",         cats: ["dzieciece"],                           desc: "Granit polerowany · Szczecinek" },
+  { img: nOld6,  type: "Nagrobek rodzinny",          cats: ["rodzinne", "podwojne"],                desc: "Granit czarny, polerowany · Warszawa" },
+  { img: nOld7,  type: "Nagrobek podwójny",          cats: ["pojedyncze", "podwojne"],              desc: "Granit czarny, polerowany · Szczecin" },
+  { img: nOld8,  type: "Nagrobek z renowacją",       cats: ["rodzinne", "renowacje"],               desc: "Granit czarny, polerowany · Szczecin" },
+  { img: nOld9,  type: "Renowacja podwójna",         cats: ["renowacje", "podwojne"],               desc: "Granit czarny, polerowany · Szczecin" },
+  { img: nOld2,  type: "Nagrobek podwójny",          cats: ["podwojne"],                            desc: "Granit szary, litery złocone" },
+  { img: nOld3,  type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                          desc: "Granit jasny z krzyżem · Poznań" },
+  { img: nOld4,  type: "Nagrobek nowoczesny",        cats: ["nowoczesne", "podwojne"],              desc: "Multicolor, forma minimalistyczna" },
+  { img: nOld5,  type: "Nagrobek prawosławny",       cats: ["pojedyncze", "nowoczesne"],            desc: "Granit szary, krzyż prawosławny" },
+  { img: nOld11, type: "Nagrobek pojedynczy",        cats: ["pojedyncze"],                          desc: "Granit czarny, polerowany" },
+  { img: nOld12, type: "Nagrobek podwójny",          cats: ["podwojne"],                            desc: "Granit czarny, polerowany" },
+  { img: nOld13, type: "Nagrobek rodzinny",          cats: ["rodzinne"],                            desc: "Granit czarny, polerowany" },
+  { img: nDetal,    type: "Detal — grafika nagrobka",cats: ["nowoczesne"],                          desc: "Granit czarny · grawer artystyczny" },
+  { img: nWarsztat, type: "Wybór z naszego zakładu", cats: ["pojedyncze", "podwojne", "nowoczesne"],desc: "Obornicka 306, Poznań" },
+  { img: n1,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit czarny, stela z latarnią" },
+  { img: n2,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary, forma pozioma klasyczna" },
+  { img: n3,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, płyta pozioma" },
+  { img: n4,  type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary, skośna płyta nowoczesna" },
+  { img: n5,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit czarny, stela klasyczna" },
+  { img: n6,  type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit różowy, minimalistyczna forma" },
+  { img: n7,  type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary ciemny, płyta pozioma" },
+  { img: n8,  type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit czarny, geometryczna stela" },
+  { img: n9,  type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary, dwa miejsca z stelą" },
+  { img: n10, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, forma pozioma" },
+  { img: n11, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary, stela z tablicą" },
+  { img: n12, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit czarny, schodkowa forma z stelą" },
+  { img: n13, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, płyta pozioma niska" },
+  { img: n14, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary, płyta z obrzeżem" },
+  { img: n15, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary, dwa miejsca forma szeroka" },
+  { img: n16, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit różowy melanż, stela klasyczna" },
+  { img: n17, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary, minimalistyczna płyta skośna" },
+  { img: n18, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary ciemny, dwa miejsca z stelą" },
+  { img: n19, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit czarny, klasyczna stela" },
+  { img: n20, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, płyta pozioma" },
+  { img: n21, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, forma pozioma klasyczna" },
+  { img: n22, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary melanż, płyta pozioma szeroka" },
+  { img: n23, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, niska płyta z obrzeżem" },
+  { img: n24, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary, dwa miejsca forma szeroka" },
+  { img: n25, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit czarny, stela z rzeźbą anioła" },
+  { img: n26, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary jasny, geometryczna forma" },
+  { img: n27, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary jasny, dwa miejsca z krzyżem" },
+  { img: n28, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary melanż, forma z obrzeżem" },
+  { img: n29, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit czarny, dwa miejsca klasyczne" },
+  { img: n30, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary jasny, skośna płyta nowoczesna" },
+  { img: n31, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary, minimalistyczna płyta pozioma" },
+  { img: n32, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit czarny, geometryczna stela z latarnią" },
+  { img: n33, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit szary jasny, dwie płyty poziome" },
+  { img: n34, type: "Nagrobek urnowy",      cats: ["urnowe"],                   desc: "Granit czarny, mała forma na urny" },
+  { img: n35, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit biały, wysoka stela minimalistyczna" },
+  { img: n36, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, klasyczna forma pozioma" },
+  { img: n37, type: "Nagrobek rodzinny",    cats: ["rodzinne"],                 desc: "Granit szary, grobowiec z rzeźbą anioła" },
+  { img: n38, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit czarny i szary, forma schodkowa" },
+  { img: n39, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit szary jasny, płyta pozioma niska" },
+  { img: n40, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit szary jasny, szeroka płyta nowoczesna" },
+  { img: n41, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit czarny, stela z bukietem" },
+  { img: n42, type: "Nagrobek nowoczesny",  cats: ["pojedyncze", "nowoczesne"], desc: "Granit czarny, minimalistyczna forma z stelą" },
+  { img: n43, type: "Nagrobek rodzinny",    cats: ["rodzinne"],                 desc: "Granit szary jasny, grobowiec wieloosobowy" },
+  { img: n44, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n45, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n46, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n47, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n48, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n49, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n50, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n51, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n52, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n53, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n54, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n55, type: "Nagrobek pojedynczy",  cats: ["pojedyncze"],               desc: "Granit polerowany" },
+  { img: n56, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit polerowany, dwa miejsca" },
+  { img: n57, type: "Nagrobek podwójny",    cats: ["podwojne"],                 desc: "Granit polerowany, dwa miejsca" },
+  { img: n58, type: "Renowacja nagrobka",   cats: ["renowacje"],                desc: "Naprawa i odnowienie nagrobka", contain: true },
 ];
 
 const FILTERS: { key: "wszystkie" | Cat; label: string }[] = [
   { key: "wszystkie", label: "Wszystkie" },
   { key: "pojedyncze", label: "Pojedyncze" },
   { key: "podwojne", label: "Podwójne" },
-  { key: "Naprawy/Renowacja", label: "Naprawy/Renowacja" },
+  { key: "urnowe", label: "Urnowe" },
   { key: "dzieciece", label: "Dziecięce" },
-  { key: "liternictwo/galatria/grawery", label: "liternictwo/galatria/grawery" },
-  { key: "Grobowiec", label: "Grobowiec" },
+  { key: "rodzinne", label: "Rodzinne" },
+  { key: "nowoczesne", label: "Nowoczesne" },
+  { key: "renowacje", label: "Renowacje" },
 ];
 
 function GaleriaPage() {
@@ -251,7 +228,7 @@ function GaleriaPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <AnimatePresence mode="popLayout">
               {filtered.map((it, i) => (
                 <motion.figure
@@ -263,19 +240,8 @@ function GaleriaPage() {
                   transition={{ duration: 0.5 }}
                   className="group overflow-hidden border border-border bg-card transition-all hover:border-gold hover:shadow-xl"
                 >
-                  <div className={`overflow-hidden bg-granite ${it.square ? "aspect-square" : "aspect-[4/5]"}`}>
-                    <img
-                      src={it.img}
-                      alt={it.square
-                        ? `Renowacja nagrobka — przed i po, NAGROBEX Poznań`
-                        : `${it.type} — realizacja NAGROBEX Poznań, nagrobki granitowe`}
-                      loading="lazy"
-                      className={
-                        it.square
-                          ? "size-full object-contain transition-opacity duration-500 group-hover:opacity-90"
-                          : "size-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      }
-                    />
+                  <div className="aspect-[4/5] overflow-hidden bg-granite">
+                    <img src={it.img} alt={it.type} loading="lazy" className={`size-full ${it.contain ? "object-contain" : "object-cover"} transition-transform duration-700 group-hover:scale-105`} />
                   </div>
                   <figcaption className="border-t border-border p-5">
                     <h3 className="font-display text-lg text-granite">{it.type}</h3>
